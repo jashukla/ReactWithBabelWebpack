@@ -8,7 +8,7 @@
     "dev": "nodemon --exec babel-node lib/server.js --watch",
     "build": "webpack --mode production",
     "webpack": "webpack -wd",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --watch"
   },
   "author": "jashukla",
   "license": "MIT",
@@ -20,8 +20,11 @@
     "@babel/preset-es2015": "^7.0.0-beta.53",
     "@babel/preset-react": "^7.10.4",
     "babel-eslint": "^10.1.0",
+    "babel-jest": "^26.3.0",
     "babel-loader": "^8.1.0",
     "eslint-plugin-react": "^7.21.2",
+    "jest": "^26.4.2",
+    "react-test-renderer": "^16.13.1",
     "webpack": "^4.44.2",
     "webpack-cli": "^3.3.12"
   },
