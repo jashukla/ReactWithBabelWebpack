@@ -5,7 +5,7 @@
   "main": "lib/server.js",
   "scripts": {
     "start": "node server/index.js",
-    "dev": "nodemon --exec babel-node lib/server.js --watch",
+    "dev": "set NODE_PATH=./lib&& nodemon --exec babel-node lib/server.js --watch",
     "build": "webpack --mode production",
     "webpack": "webpack -wd",
     "test": "jest --watch"
